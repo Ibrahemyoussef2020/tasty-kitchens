@@ -1,0 +1,67 @@
+.login{
+    height: 100vh;
+    margin: auto;
+}
+
+.login-form{
+    position: relative;
+    height:100%;
+    background: red;
+}
+
+.form-img{
+    position: absolute;
+    top: 0;
+    bottom:46%;
+    right: 0;
+    left:16.5%;
+}
+
+.inputs{
+    position: absolute;
+    top:54%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #fff;
+}
+
+.inputs > div {
+    flex:1;
+    padding: 5px 24px;
+}
+.inputs label{
+    display: block;
+    height:38%;
+    padding-bottom: 8px;
+}
+.inputs input {
+    width: 100%;
+    height:40%;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #333;
+}
+.inputs .text-error{
+    height: 23%;
+    padding-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.login-img{
+    display: none;
+}

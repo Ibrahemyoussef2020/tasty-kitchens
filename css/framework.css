@@ -1,0 +1,138 @@
+:root{
+    --dm-font:'DM Sans', sans-serif;
+    /* fonts sizes */
+    --sixteen-mob:16px; /* pc 36 */
+    --eight-mob:8px;/* pc 16 */
+    --forty-two-mob:24px;  /* pc 32 */
+    /* gaps */
+    --sixty-gap:16px; /* both media */
+    --twelve-gap:12px; /* both media */
+    --margin-x-container:24px; /* 24 left bottom mob - 165 x  32 bottom pc*/
+    --margin-gap:24px; /* pc 32 */
+    --logo-width:39px /* 53 pc */;
+    --logo-height:32px /* 43 pc */;
+    --cover-radius:7px;
+
+    /* colors */
+    --orange-color:#F7931E;
+    --light-color:#fff;
+}
+
+*,body,.root{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:var(--dm-font);
+}
+
+.root{
+    height: 100%;
+    width: 100%;
+}
+
+/* elements */
+
+ul{
+    list-style: none;
+}
+
+button,.clicked{
+    cursor: pointer;
+}
+
+h6{
+    margin-block-start:0em;
+    margin-block-end:0em;
+    white-space: nowrap;
+}
+
+/**********    components       ***********/
+
+.container{
+ width: calc(100% - calc(var(--margin-x-container) * 2));
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+}
+
+.btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius:8px;
+    color:#fff;
+    background: var(--orange-color);
+}
+
+/*  classes     */
+
+/* colors */
+
+.red {background: red;}
+
+.yell{background: #fff000}
+
+.orange-color{
+    color: var(--orange-color);
+}
+
+/* sizes */ 
+
+.full-size{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* display */
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.d-sm-none{
+    display: none 
+}
+
+/* positions */
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+
+/* fonts */
+
+.bold{
+    font-weight:700;
+}
+
+.semi-font{
+    font-weight: 500;
+}
+
+
+
+
+

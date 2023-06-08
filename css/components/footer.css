@@ -1,0 +1,44 @@
+.main-footer{
+    padding: 50px 40px;
+    color: #fff;
+    background: #0F172A;
+}
+
+.main-footer .logo{
+    gap: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main-footer .logo-img {
+    max-width: 37px;
+    max-height: 29px;
+}
+
+
+.main-footer section{
+    text-align: center;
+}
+
+.main-footer .logo{
+    margin-bottom: 28px;
+}
+.main-footer .article{
+    margin-bottom:32px;
+}
+
+.main-footer p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main-footer .social {
+    column-gap: 28px;
+}
+
+.main-footer .social div{
+    width: 20px;
+    height: 20px;  
+}

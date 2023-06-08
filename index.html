@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Tasty Kitchens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/cover.css">
+    <link rel="stylesheet" href="css/components/meals.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<div class="root">   
+
+    <!-- header -->
+
+    <header class="main-header relative">
+        <div class="container">
+            <section class="logo-container flex align-center">
+                <div class="logo-img">
+                    <img class="full-size" src="images/others/header-mind.png" alt="">
+                </div>
+                <div class="logo-content">
+                    <h4 class="bold orange-color">Tasty Kitchens</h4>
+                </div>
+            </section>
+            <section class="nav-container semi-font">
+                <ul class="flex align-center">
+                    <li>Home</li>
+                    <li class="orange-color">Cart</li>
+                    <li><button class="btn">Logout</button></li>
+                </ul>
+                <div class="d-lg-none x clicked">x</div>
+            </section>
+        </div>
+
+        <div class="menu-btn d-lg-none absolute clicked">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- cover -->
+
+    <div class="orange-cover cover flex relative">
+        <section class="img-container ">
+            <img src="images/cover/spicy-dish.png" alt="">
+        </section>
+
+        <div class="yellow-border flex absolute">
+            <img src="images/cover/vector-1.png" alt="">
+            <img src="images/cover/vector-2.png" alt="">
+        </div>
+
+        <div class="content">
+            <h6>
+                South Indian Food
+            </h6>
+            <p>
+                Best offers on South India holiday tour packages at Veena World.
+            </p>
+            <div class="contact flex align-center">
+                <span class="whats">
+                    <img class="full-size d-sm-none" src="images/cover/whats-pc.png" alt="">
+                    <img class="full-size d-lg-none" src="images/cover/whats-mob.png" alt="">
+                </span>
+                <span>
+                    +123 456 789
+                </span>
+            </div>
+
+            <div class="offer-container absolute">
+                <img class="d-lg-none" src="images/cover/offer-mob.png" alt="">
+                
+                <div class="fifty flex  d-sm-none  align-center justify-center relative">
+                    <img src="images/cover/50.png" alt="">
+                </div>
+
+                <div class="water-mark">
+                    <div class="d-lg-none b"><img  src="images/cover/water-mark-mob.png" alt=""></div>
+                    <div class="d-sm-none b"><img  src="images/cover/water-mark-pc.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="points absolute">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="water-mark">
+            <div class="d-lg-none b"><img  src="images/cover/water-mark-mob.png" alt=""></div>
+            <div class="d-sm-none b"><img  src="images/cover/water-mark-pc.png" alt=""></div>
+        </div>
+
+        <div class="brown-img absolute">
+            <img class="full-size" src="images/cover/vector-3.png" alt="">
+        </div>
+    </div>
+
+    <!--- test cover-->
+
+    <div class="cover black-cover flex">
+        <section class="img-container">
+            <img class="full-size d-lg-none" src="images/black-cover/black-cover-mob-dish.png" alt="">
+            <img class="full-size d-sm-none" src="images/black-cover/black-cover-pc-dish.png" alt="">
+        </section>
+        <section class="content">
+            <h6>Mc Donald’s</h6>
+            <p>
+                <span class="flex">Mc Donald’s</span>
+                <span class="flex">TGF Variety Mall, Kurnool.</span>
+            </p>
+
+            <div class="rating flex align-center relative">
+                
+                <div class="rating-left">
+                    <div class="start">
+                        <img src="images/black-cover/star-mob.png" alt="">
+                    </div>
+                    <div class="rating-in-numbers">
+                        <p>200 + Rating</p>
+                    </div>
+                </div>    
+
+                <div class="rating-right">
+                    <div class="start">
+                        <img src="images/black-cover/star-mob.png" alt="">
+                    </div>
+                    <div class="rating-in-numbers">
+                        <p>200 + Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!---------  meals ----------->
+
+    <!--meals filter-->
+    <div class="filters">
+        <div class="container">
+            <section class="popular">
+                <h3>Popular Restaurants</h3>
+                <p>
+                    Select Your favourite restaurant special dish and make your day happy...
+                </p>
+            </section>
+            <section class="sort flex align-center space-between">
+                <div class="sort-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="sort-title">
+                    <h4>Sort by Highest</h4>
+                </div>
+                <div class="sort-drop">
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="meals">
+        <div class="container">
+            <section class="meal small">
+                    <div class="meal-img">
+                        <img src="images/home/home-body/home-1.png" alt="">
+                    </div>
+                    <div class="meal-content">
+                        <h6>McDonald’s</h6>
+                        <p>Fast Food</p>
+                        <div class="meals-rating">
+                            <span><img src="images/others/yellow-star.png" alt=""></span>
+                            <span>
+                            (222 ratings)
+                            </span>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-2.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-3.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-4.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-5.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-6.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-7.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-8.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="meal small">
+                <div class="meal-img">
+                    <img src="images/home/home-body/home-9.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>McDonald’s</h6>
+                    <p>Fast Food</p>
+                    <div class="meals-rating">
+                        <span><img src="images/others/yellow-star.png" alt=""></span>
+                        <span>
+                        (222 ratings)
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="pagination flex align-center space-between">
+        <section class="left flex align-center justify-center">
+            &lt;
+        </section>
+        <section class="title">
+            <h4>1 of 20</h4>
+        </section>
+        <section class="right flex align-center justify-center">
+            &gt;
+        </section>
+    </div>
+
+    <!--   footer   -->
+
+
+    <footer class="main-footer">
+        <section class="logo flex align-center justify-center">
+            <div class="logo-img">
+                <img class="full-size" src="images/footer/chef.png" alt="">
+            </div>
+            <div class="img-tiltle">
+                <h4>Tasty Kitchens</h4>
+            </div>
+        </section>
+
+        <section class="article">
+            <p>
+                The only thing we are serious about is food.<br/>
+                Contact us on
+            </p>
+        </section>
+
+        <section class="social flex align-center space-between">
+            <div>
+                <img class="full-size" src="images/footer/insp.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="images/footer/instagram.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="images/footer/twaitter.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="images/footer/facebook.png" alt="">
+            </div>
+        </section>
+    </footer>
+
+</div>     
+</body>
+</html>
