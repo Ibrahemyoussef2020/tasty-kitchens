@@ -6,7 +6,73 @@
         --margin-gap:20px;
     }
 
-    /******* start ************/
+    /* classes */
+    .d-sm-none {
+        display: inline;
+    }
+    .d-sm-none.flex {
+        display: flex;
+    }
+    .d-sm-none.b{
+        display: block;
+    }
+    .d-lg-none{
+        display: none !important;
+    }
+
+    /******************* pagination component ************/
+
+    .pagination{
+        margin: 64px auto;
+    }
+
+    .pagination h4{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .pagination .left,
+    .pagination .right{
+        border: 2px solid #334155;
+        font-size: 18px;
+    }
+
+    /****************** footer component ********************/
+
+    .main-footer{
+        padding: 100px 40px;
+    }
+
+    .main-footer .logo{
+        margin-bottom: 24px;
+    }
+
+    .main-footer h4{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .main-footer .article{
+        margin-bottom: 48px;
+    }
+
+    .main-footer p {
+        line-height: 32px;
+        max-width: 479px;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    .main-footer .social{
+        max-width: 250px;
+    }
+
+    .main-footer .social  div{
+        width:40px;
+        height:40px;
+    }
+
+    /******* header component ************/
 
 
     .main-header .logo-content h4{
@@ -17,6 +83,8 @@
     .nav-container ul li{
         font-weight: 700;
     }
+
+    /******* orange cover component ************/
 
     .orange-cover {
         width: calc(100% - calc(var(--margin-x-container) * 2));
@@ -43,7 +111,8 @@
         justify-content:center;
     }
 
-    /* black cover */
+    /********* black cover component  ***********/
+
     .black-cover {
         height: 344px;
         padding: 32px 0;
@@ -88,6 +157,9 @@
     
 }
 
+
+
+
 @media only screen and (min-width:1024px){
 
     :root{
@@ -109,9 +181,9 @@
         transform:scale3d(1,1,1);
     }
 
-    /************** start ************************/
+    
 
-    /*  orange cover  */
+    /***********  orange cover component   ***********/
 
     .cover{
         min-height: 305px;
@@ -177,8 +249,6 @@
         left: -124px;
         bottom: 70px;
     }
-
-
     .points{
         gap: 12px;
     }
@@ -199,13 +269,14 @@
         right: 95px;
     }
 
-    /* black cover */
+    /********* black cover component ************/
 
     .black-cover {
         background-position: -63px 0px;
+        margin-bottom:64px;
     }
 
-    /* meals */
+    /*  general meals component */
 
     .filters .container{
         flex-direction: row;
@@ -229,80 +300,189 @@
         column-gap:12px
     }
 
-    .meals .container {
-        grid-template-columns: repeat(3, 1fr);
+    .meals .container{
+        width:95%;
+        margin: auto;
     }
-    
-       /*  classes */
-    .d-sm-none {
-        display: inline;
+
+    .meal.large .meal-img {
+        width: 255px;
+        height: 150px;
     }
-    .d-sm-none.flex {
+
+    .meal.large .meal-content  h6{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .meal.large .meal-content  p{
+        font-size: 16px;
+        margin-bottom:9px;
+    }
+
+    /******************************************/
+    /*             cart page                  */
+    /******************************************/
+
+    .cart h4{
+        font-size:20px;
+    }
+
+    .cart .container{
+        padding: 32px 24px 0px;
+        box-shadow: 2px 1px 0 0 rgba(56,60,86,.44),
+                    -1px -1px 0px 0 rgba(56,60,86,.44)
+    }
+
+    .cart-header{
         display: flex;
     }
-    .d-sm-none.b{
+    .meal-cart-content{
+        flex-direction:row;
+    }
+
+    .cart .meal-cart-content  > *:last-child {
+        justify-content: flex-end;
+    }
+
+    .meal-qty{
+        padding-right:130px;
+    }
+
+    .cart-footer:not(.btn-container){
+        font-size:24px;
+        line-height:32px;
+    }
+    .cart-footer .btn-container{
+        top: 56px;
+    }
+/*****************************************************/
+/*                      form component               */
+/*****************************************************/    
+
+    .login{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 114px;
+        perspective-origin:top left;
+        margin: 0;
+    }
+
+    .login > *{
+        flex:1;
+    }
+
+    .login-form{
+        position: initial;
+        max-width:calc(100% - 156px);
+        max-width:456px;
+        height:calc(561px + 48px);
+        padding:0 48px 48px;
+        margin-left: var(--margin-x-container);
+        background: #FEFEFF;
+        box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    }
+
+
+    .form-img {
+        display: none;
+    }
+
+    .inputs{
+        position: initial;
+        height:286px;
+        padding: 0;
+        margin: 0;
+        background: inherit;
+    }
+
+    .inputs label.relative::before {
+        content: 'Login';
+        position: absolute;
+        top:-88px;
+        left: 0;
+        right: 0;
+        font-size:32px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 32px;
+        text-align: center;
+        color: #0F172A;
+    }
+
+    .login .login-img{
         display: block;
     }
-    .d-lg-none{
-        display: none !important;
+
+    .login .logo{
+        display: block;
     }
 
-    .pagination{
-        margin: 64px auto;
+    /***********************************************/
+    /*              root-minus-header-child       */                 */
+    /*********************************************/
+
+    .root-minus-header-child.success  .img{
+        max-width:64px;
+        max-height:64px;
+        margin:0 auto 40px;
+    }
+    .root-minus-header-child.empty-cart .img{
+        max-width:425px;
+        max-height:367px;
+        margin:0 auto 48px;
+    }
+    .root-minus-header-child.not-found .img{
+        max-width:269px;
+        max-height:297px;
+        margin:0 auto 48px;
+    }
+    .root-minus-header-child.success h3{
+        font-size:24px;
+        line-height:32px;
+    }
+    .root-minus-header-child.empty-cart h3{
+        font-size:32px;
+        line-height:48px;
+    }
+    .root-minus-header-child.not-found h3{
+        font-size:32px;
+        font-weight: 700;
+        line-height:48px;
     }
 
-    .pagination h4{
+    .root-minus-header-child.empty-cart  article{
+        margin-bottom:16px;
+    }
+    .root-minus-header-child.empty-cart  article p{
+        margin-bottom:16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .root-minus-header-child.success article p{
+        font-size:16px;
+    }
+    .root-minus-header-child article p{
         font-size: 20px;
-        line-height: 27px;
-    }
-
-    .pagination .left,
-    .pagination .right{
-        border: 2px solid #334155;
-        font-size: 18px;
-    }
-
-    .main-footer{
-        padding: 100px 40px;
-    }
-
-    .main-footer .logo{
-        margin-bottom: 24px;
-    }
-
-    .main-footer h4{
-        font-size: 32px;
-        line-height: 48px;
-    }
-
-    .main-footer .article{
-        margin-bottom: 48px;
-    }
-
-    .main-footer p {
         line-height: 32px;
-        max-width: 479px;
-        font-size: 24px;
-        margin: 0 auto;
     }
 
-    .main-footer .social{
-        max-width: 200px;
-        margin: 0 auto 100px;
-        column-gap: 28px;
+    .root-minus-header-child.empty-cart br{
+        display: none;
     }
-
-    .main-footer .social  div{
-        width:40px;
-        height:40px;
-    }
-
 }
+
+
+
+
 
 @media only screen and (min-width:1340px){
     :root{
         --margin-x-container:165px;
     }
+
+    /***************** orange cover component ************/
 
     .orange-cover .img-container {
         width: 550px;
@@ -334,9 +514,19 @@
     .orange-cover > .water-mark {
         top:40px;
         right: 141px;
-    }    
+    }
+
+
+    /********************* meals component ************/
+    
+    .meals .container {
+        width: calc(100% - calc(var(--margin-x-container) * 2));
+        justify-content: space-around;
+    }
+     
+    .meals .container .meal-content{
+        width: 175px;
+    }
     
 }
-
-
 

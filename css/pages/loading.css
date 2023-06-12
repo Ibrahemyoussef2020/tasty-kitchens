@@ -1,0 +1,40 @@
+.loading-container span{
+    position: relative;
+    display: inline-block;
+    border:4px solid #F7931E;
+    border-radius: 50%;
+    width:32px;
+    height: 32px; /*54 w h lg*/
+   animation:loading 1s linear infinite;
+}
+
+.loading-container span::after{
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 15px;
+    left: 4px;
+    top: -5px;
+    background:#fff;
+    transform: rotate(97deg);
+}
+
+@keyframes loading{
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media only screen and (min-width:600px){
+    .loading-container span{
+        height:54px;
+        width:54px;
+        border-width:8px;
+    }
+    .loading-container span::after{
+        width: 20px;
+        height: 14px;
+        left: 15px;
+        top: -11px;
+    }
+}

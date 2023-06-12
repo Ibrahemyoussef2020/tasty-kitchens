@@ -1,5 +1,6 @@
 .main-footer{
     padding: 50px 40px;
+    margin-top: 48px;
     color: #fff;
     background: #0F172A;
 }
@@ -36,9 +37,15 @@
 
 .main-footer .social {
     column-gap: 28px;
+    max-width: 175px;
+    margin: 0 auto;
 }
 
 .main-footer .social div{
     width: 20px;
     height: 20px;  
+}
+
+.cart-root .main-footer{
+    margin-top: 0 !important;
 }

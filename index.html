@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>Tasty Kitchens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>Tasty Kitchens</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +18,11 @@
     <link rel="stylesheet" href="css/components/cover.css">
     <link rel="stylesheet" href="css/components/meals.css">
     <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/components/pagination.css">
     <link rel="stylesheet" href="css/media.css">
 
-    <script src="js/script.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/drop.js" defer></script>
 </head>
 <body>
 <div class="root">   
@@ -31,22 +31,22 @@
 
     <header class="main-header relative">
         <div class="container">
-            <section class="logo-container flex align-center">
+            <div class="logo-container flex align-center">
                 <div class="logo-img">
                     <img class="full-size" src="images/others/header-mind.png" alt="">
                 </div>
                 <div class="logo-content">
                     <h4 class="bold orange-color">Tasty Kitchens</h4>
                 </div>
-            </section>
-            <section class="nav-container semi-font">
+            </div>
+            <div class="nav-container semi-font">
                 <ul class="flex align-center">
-                    <li>Home</li>
-                    <li class="orange-color">Cart</li>
-                    <li><button class="btn">Logout</button></li>
+                    <li><a href="#">Home</a></li>
+                    <li class="orange-color"><a href="html/cart.html">Cart</a></li>
+                    <li><button class="btn"><a href="html/login.html">Logout</a></button></li>
                 </ul>
                 <div class="d-lg-none x clicked">x</div>
-            </section>
+            </div>
         </div>
 
         <div class="menu-btn d-lg-none absolute clicked">
@@ -59,10 +59,10 @@
 
     <!-- cover -->
 
-    <div class="orange-cover cover flex relative">
-        <section class="img-container ">
+    <section class="orange-cover cover flex relative">
+        <div class="img-container ">
             <img src="images/cover/spicy-dish.png" alt="">
-        </section>
+        </div>
 
         <div class="yellow-border flex absolute">
             <img src="images/cover/vector-1.png" alt="">
@@ -116,75 +116,45 @@
         <div class="brown-img absolute">
             <img class="full-size" src="images/cover/vector-3.png" alt="">
         </div>
-    </div>
-
-    <!--- test cover-->
-
-    <div class="cover black-cover flex">
-        <section class="img-container">
-            <img class="full-size d-lg-none" src="images/black-cover/black-cover-mob-dish.png" alt="">
-            <img class="full-size d-sm-none" src="images/black-cover/black-cover-pc-dish.png" alt="">
-        </section>
-        <section class="content">
-            <h6>Mc Donald’s</h6>
-            <p>
-                <span class="flex">Mc Donald’s</span>
-                <span class="flex">TGF Variety Mall, Kurnool.</span>
-            </p>
-
-            <div class="rating flex align-center relative">
-                
-                <div class="rating-left">
-                    <div class="start">
-                        <img src="images/black-cover/star-mob.png" alt="">
-                    </div>
-                    <div class="rating-in-numbers">
-                        <p>200 + Rating</p>
-                    </div>
-                </div>    
-
-                <div class="rating-right">
-                    <div class="start">
-                        <img src="images/black-cover/star-mob.png" alt="">
-                    </div>
-                    <div class="rating-in-numbers">
-                        <p>200 + Rating</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    </section>
 
     <!---------  meals ----------->
 
     <!--meals filter-->
-    <div class="filters">
+    <section class="filters">
         <div class="container">
-            <section class="popular">
+            <div class="popular">
                 <h3>Popular Restaurants</h3>
                 <p>
                     Select Your favourite restaurant special dish and make your day happy...
                 </p>
-            </section>
-            <section class="sort flex align-center space-between">
+            </div>
+            <div class="sort flex align-center space-between">
                 <div class="sort-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+
+
+
+
                 <div class="sort-title">
-                    <h4>Sort by Highest</h4>
+                    <h4 class="sort-title-heading">Sort by Highest</h4>
                 </div>
-                <div class="sort-drop">
-
+                <div class="sort-drop relative">
+                    <div name="choose-sort-item" id="choose-sort-item" class="choose-sort-item flex">
+                        <div class="lowest  option flex align-center"  id="Lowest">lowest</div>
+                        <div class="highest option  flex align-center" id="Highest">highest</div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="meals">
+    <section class="meals">
         <div class="container">
-            <section class="meal small">
+            <article class="meal small">
                     <div class="meal-img">
                         <img src="images/home/home-body/home-1.png" alt="">
                     </div>
@@ -198,9 +168,9 @@
                             </span>
                         </div>
                     </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-2.png" alt="">
                 </div>
@@ -214,9 +184,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-3.png" alt="">
                 </div>
@@ -230,9 +200,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-4.png" alt="">
                 </div>
@@ -246,9 +216,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-5.png" alt="">
                 </div>
@@ -262,9 +232,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-6.png" alt="">
                 </div>
@@ -278,9 +248,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-7.png" alt="">
                 </div>
@@ -294,9 +264,9 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="meal small">
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-8.png" alt="">
                 </div>
@@ -310,8 +280,8 @@
                         </span>
                     </div>
                 </div>
-            </section>
-            <section class="meal small">
+            </article>
+            <article class="meal small">
                 <div class="meal-img">
                     <img src="images/home/home-body/home-9.png" alt="">
                 </div>
@@ -325,20 +295,20 @@
                         </span>
                     </div>
                 </div>
-            </section>
+            </article>
         </div>
-    </div>
+    </section>
 
     <div class="pagination flex align-center space-between">
-        <section class="left flex align-center justify-center">
+        <span class="block left flex align-center justify-center">
             &lt;
-        </section>
-        <section class="title">
+        </span>
+        <div class="title">
             <h4>1 of 20</h4>
-        </section>
-        <section class="right flex align-center justify-center">
+        </div>
+        <span class="block right flex align-center justify-center">
             &gt;
-        </section>
+        </span>
     </div>
 
     <!--   footer   -->
@@ -354,12 +324,12 @@
             </div>
         </section>
 
-        <section class="article">
+        <article class="article">
             <p>
                 The only thing we are serious about is food.<br/>
                 Contact us on
             </p>
-        </section>
+        </article>
 
         <section class="social flex align-center space-between">
             <div>
@@ -376,7 +346,6 @@
             </div>
         </section>
     </footer>
-
 </div>     
 </body>
 </html>

@@ -32,7 +32,7 @@
 }
 
 .brown-img{
-    right:-5px;
+    right:0px;
     top: 0;
     bottom: 10px;
     height:100%;
@@ -146,16 +146,15 @@
     z-index: 3;
 }
 
+
 /* black cover */
 
 .black-cover{
     height: 188px;
-    background-image: url('../images/black-cover/cover-black.png');
+    background-image: url('../../images/black-cover/cover-black.png');
     background-size: cover;
     color: var(--light-color);
-
-    /* for wating */
-    display: none;
+    margin-bottom:32px;
 }
 
 .black-cover .img-container{
@@ -188,8 +187,6 @@
     width: 100%;
     gap: 32px;
 }
-
-
 
 .rating .rating-left{
     padding-right: 20px;

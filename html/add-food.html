@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>Tasty Kitchens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/framework.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/cover.css">
+    <link rel="stylesheet" href="../css/components/meals.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <script src="../js/home.js" defer></script>
+</head>
+<body>
+<div class="root">   
+
+    <!-- header -->
+
+    <header class="main-header relative">
+        <div class="container">
+            <div class="logo-container flex align-center">
+                <div class="logo-img">
+                    <img class="full-size" src="../images/others/header-mind.png" alt="">
+                </div>
+                <div class="logo-content">
+                    <h4 class="bold orange-color">Tasty Kitchens</h4>
+                </div>
+            </div>
+            <div class="nav-container semi-font">
+                <ul class="flex align-center">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="orange-color"><a href="../html/cart.html">Cart</a></li>
+                    <li><button class="btn"><a href="../html/login.html">Logout</a></button></li>
+                </ul>
+                <div class="d-lg-none x clicked">x</div>
+            </div>
+        </div>
+
+        <div class="menu-btn d-lg-none absolute clicked">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!--- black cover-->
+
+    <section class="cover black-cover flex">
+        <div class="img-container">
+            <img class="full-size d-lg-none" src="../images/black-cover/black-cover-mob-dish.png" alt="">
+            <img class="full-size d-sm-none" src="../images/black-cover/black-cover-pc-dish.png" alt="">
+        </div>
+        <div class="content">
+            <h6>Mc Donald’s</h6>
+            <p>
+                <span class="flex">Mc Donald’s</span>
+                <span class="flex">TGF Variety Mall, Kurnool.</span>
+            </p>
+
+            <div class="rating flex align-center relative">
+                
+                <div class="rating-left">
+                    <div class="start">
+                        <img src="../images/black-cover/star-mob.png" alt="">
+                    </div>
+                    <div class="rating-in-numbers">
+                        <p>200 + Rating</p>
+                    </div>
+                </div>    
+
+                <div class="rating-right">
+                    <div class="start">
+                        <img src="../images/black-cover/star-mob.png" alt="">
+                    </div>
+                    <div class="rating-in-numbers">
+                        <p>200 + Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------  meals ----------->
+
+    <section class="meals">
+        <div class="container">
+            <article class="meal large">
+                    <div class="meal-img">
+                        <img src="../images/home/buy-meals/1.png" alt="">
+                    </div>
+                    <div class="meal-content">
+                        <h6>Chicken Roast</h6>
+                        <p>₹ 350.00</p>
+                        <div class="meals-rating">
+                            <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        </div>
+                        <div class="add-meal">
+                            <span>add</span>
+                        </div>
+                    </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/2.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/3.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/4.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/5.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/6.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/7.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/8.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/9.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+            </article>
+            <article class="meal large">
+                <div class="meal-img">
+                    <img src="../images/home/buy-meals/10.png" alt="">
+                </div>
+                <div class="meal-content">
+                    <h6>Chicken Roast</h6>
+                    <p>₹ 350.00</p>
+                    <div class="meals-rating">
+                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    </div>
+                    <div class="add-meal">
+                        <span>add</span>
+                    </div>
+                </div>
+        </article>
+        <article class="meal large">
+            <div class="meal-img">
+                <img src="../images/home/buy-meals/11.png" alt="">
+            </div>
+            <div class="meal-content">
+                <h6>Chicken Roast</h6>
+                <p>₹ 350.00</p>
+                <div class="meals-rating">
+                    <span><img src="../images/others/yellow-star.png" alt=""></span>
+                </div>
+                <div class="add-meal">
+                    <span>add</span>
+                </div>
+            </div>
+        </article>
+        <article class="meal large">
+            <div class="meal-img">
+                <img src="../images/home/buy-meals/12.png" alt="">
+            </div>
+            <div class="meal-content">
+                <h6>Chicken Roast</h6>
+                <p>₹ 350.00</p>
+                <div class="meals-rating">
+                    <span><img src="../images/others/yellow-star.png" alt=""></span>
+                </div>
+                <div class="add-meal">
+                    <span>add</span>
+                </div>
+            </div>
+    </article>
+        </div>
+    </section>
+
+    <!--   footer   -->
+
+
+    <footer class="main-footer">
+        <section class="logo flex align-center justify-center">
+            <div class="logo-img">
+                <img class="full-size" src="../images/footer/chef.png" alt="">
+            </div>
+            <div class="img-tiltle">
+                <h4>Tasty Kitchens</h4>
+            </div>
+        </section>
+
+        <article class="article">
+            <p>
+                The only thing we are serious about is food.<br/>
+                Contact us on
+            </p>
+        </article>
+
+        <section class="social flex align-center space-between">
+            <div>
+                <img class="full-size" src="../images/footer/insp.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="../images/footer/instagram.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="../images/footer/twaitter.png" alt="">
+            </div>
+            <div>
+                <img class="full-size" src="../images/footer/facebook.png" alt="">
+            </div>
+        </section>
+    </footer>
+</div>     
+</body>
+</html>

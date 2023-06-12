@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>Tasty Kitchens</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +16,7 @@
     <link rel="stylesheet" href="../css/pages/login.css">
     <link rel="stylesheet" href="../css/media.css">
 
-    <script src="../js/script.js"></script>
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
     <div class="login">
@@ -26,27 +24,32 @@
             <div class="form-img">
                 <img class="full-size" src="../images/login/login-mob.png" alt="">
             </div>
-            <div class="inputs">
+            <div class="logo">
+                <div>
+                    <img src="../images/others/header-mind.png" alt="">
+                </div>
+                <div>
+                    <h5>Tasty Kitchens</h5>
+                </div>
+            </div>
+            <form id="inputs" class="inputs">
                 <div class="input-container">
-                    <label for="name">USERNAME</label>
+                    <label class="relative" for="name" id="name-label">USERNAME</label>
                     <input type="text" name="name" id="name">
-                    <p class="text-error" id="name-error">Please enter a valid Username & Password</p>
                 </div>
                 <div class="input-container">
-                    <label for="password">Password</label>
+                    <label for="password" id="password-label">PASSWORD</label>
                     <input type="password" name="password" id="password">
-                    <p class="text-error" id="password-error">Please enter a valid Username & Password</p>
+                    <p class="text-error" id="text-error"></p>
                 </div>
                 <div class="botton-container">
-                    <button>Login</button>
+                    <button type="submit">Login</button>
                 </div>
-                <div class="padding-button"></div>
-            </div>
-            </div>
+            </form>
         </section>
 
         <section class="login-img">
-            <img src="../images/login/login-pc.png" alt="">
+            <img class="full-size" src="../images/login/login-pc.png" alt="">
         </section>
     </div>
 </body>

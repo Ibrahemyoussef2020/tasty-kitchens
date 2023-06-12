@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <title>Tasty Kitchens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/framework.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/pagination.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/cart.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <script src="../js/home.js" defer></script>
+</head>
+<body>
+    <div class="root cart-root">
+        <header class="main-header relative">
+            <div class="container">
+                <div class="logo-container flex align-center">
+                    <div class="logo-img">
+                        <img class="full-size" src="../images/others/header-mind.png" alt="">
+                    </div>
+                    <div class="logo-content">
+                        <h4 class="bold orange-color">Tasty Kitchens</h4>
+                    </div>
+                </div>
+                <div class="nav-container semi-font">
+                    <ul class="flex align-center">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="orange-color"><a href="../html/cart.html">Cart</a></li>
+                        <li><button class="btn"><a href="../html/login.html">Logout</a></button></li>
+                    </ul>
+                    <div class="d-lg-none x clicked">x</div>
+                </div>
+            </div>
+    
+            <div class="menu-btn d-lg-none absolute clicked">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+            <!-- items -->
+        <section class="cart">
+            <div class="container">
+                <header class="cart-header flex  space-between">
+                    <div><h4>Item</h4></div>
+                    <div class="align-center"><h4>Quantity</h4></div>
+                    <div><h4>Price</h4></div>
+                </header>
+                <div class="cart-body">
+
+                    <div class="meal flex space-between align-center">
+                        <div class="meal-cart-img">
+                                <img src="../images/home/cart/1.png" alt="">  
+                        </div>
+                        <div class="meal-cart-content  flex space-between">
+                            <div class="meal-title flex align-center space-between">
+                                <h4>Prawn Special</h4>    
+                            </div>
+                            <div class="meal-qty pagination small flex align-center space-between"> 
+                                    <span class="block clicked left flex align-center justify-center">
+                                        +
+                                    </span>
+                                    <div class="title">
+                                        <h6>1</h6>
+                                    </div>
+                                    <span class="block clicked right flex align-center justify-center">
+                                        -
+                                    </span>
+                            </div>
+                            <div class="meal-price flex align-center space-between">
+                                ₹ 550.00
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="meal flex space-between align-center">
+                        <div class="meal-cart-img">
+                                <img src="../images/home/cart/2.png" alt="">  
+                        </div>
+                        <div class="meal-cart-content flex space-between">
+                            <div class="meal-title flex align-center space-between">
+                                <h4>Full Meals</h4>    
+                            </div>
+                            <div class="meal-qty pagination small flex align-center space-between"> 
+                                    <span class="block clicked left flex align-center justify-center">
+                                        +
+                                    </span>
+                                    <div class="title">
+                                        <h6>1</h6>
+                                    </div>
+                                    <span class="block clicked right flex align-center justify-center">
+                                        -
+                                    </span>
+                            </div>
+                            <div class="meal-price flex align-center space-between">
+                                ₹ 550.00
+                            </div>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr/>
+                <footer class="cart-footer flex space-between relative">
+                    <div>
+                        <span>Order Total : </span>
+                    </div>
+                    <div>
+                        <span>₹800.00</span>
+                    </div>
+                    <div class="absolute btn-container">
+                        <button class="btn">Place Order</button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+
+            <!--   footer   -->
+
+
+        <footer class="main-footer">
+            <section class="logo flex align-center justify-center">
+                <div class="logo-img">
+                    <img class="full-size" src="../images/footer/chef.png" alt="">
+                </div>
+                <div class="img-tiltle">
+                    <h4>Tasty Kitchens</h4>
+                </div>
+            </section>
+
+            <article class="article">
+                <p>
+                    The only thing we are serious about is food.<br/>
+                    Contact us on
+                </p>
+            </article>
+
+            <section class="social flex align-center space-between">
+                <div>
+                    <img class="full-size" src="../images/footer/insp.png" alt="">
+                </div>
+                <div>
+                    <img class="full-size" src="../images/footer/instagram.png" alt="">
+                </div>
+                <div>
+                    <img class="full-size" src="../images/footer/twaitter.png" alt="">
+                </div>
+                <div>
+                    <img class="full-size" src="../images/footer/facebook.png" alt="">
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>    

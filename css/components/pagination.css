@@ -1,0 +1,48 @@
+.pagination {
+    margin-bottom: 50px;
+    max-width: fit-content;
+    gap: 12px;
+    margin: 32px auto 48px;
+}
+.pagination.small {
+    margin-bottom:0px;
+    max-width: fit-content;
+    column-gap:10px;
+    margin:0;
+}
+
+.pagination h4{
+    font-family:'Bree Serif', serif;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 24px;
+    word-spacing: 5px;
+    color: #334155;
+}
+
+.pagination  h6{
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #475569;
+}
+
+.pagination span{
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border:1px solid #334155;
+    color: #475597;
+}
+.pagination.small span{
+    font-family: 'Bree Serif', serif;
+    width: 17px;
+    height:17px;
+    font-size:12px;
+    font-weight:500;
+    margin-bottom: 5px;
+    border-width: .5px;
+    color: #475569;
+    border-radius: 2px;
+}

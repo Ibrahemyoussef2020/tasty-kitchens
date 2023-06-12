@@ -37,7 +37,7 @@ body{
     width: 100%;
 }
 
-/* elements */
+/*********  general elements  **********/
 
 ul{
     list-style: none;
@@ -53,7 +53,12 @@ h6{
     white-space: nowrap;
 }
 
-/**********    components       ***********/
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/**********  general  components   ***********/
 
 .container{
  width: calc(100% - calc(var(--margin-x-container) * 2));
@@ -73,13 +78,23 @@ h6{
     background: var(--orange-color);
 }
 
-/*  classes     */
+
+.root-minus-header{
+    width: 100%;
+    height:calc(100vh - 96px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root-minus-header.plus-header{
+    height: 100vh;
+}
+
+
+/***********   classes    ********** */
 
 /* colors */
-
-.red {background: red;}
-
-.yell{background: #fff000}
 
 .orange-color{
     color: var(--orange-color);
@@ -113,6 +128,7 @@ h6{
     display: none 
 }
 
+
 /* positions */
 .relative{
     position: relative;
@@ -123,6 +139,10 @@ h6{
 
 
 /* fonts */
+
+.none{
+    display: none;
+}
 
 .bold{
     font-weight:700;
