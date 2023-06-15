@@ -15,12 +15,16 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/framework.css">
     <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/pagination.css">
+    <link rel="stylesheet" href="../css/components/counter.css">
     <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/counter.css">
     <link rel="stylesheet" href="../css/pages/cart.css">
     <link rel="stylesheet" href="../css/media.css">
 
-    <script src="../js/home.js" defer></script>
+    <script type="module" src="../js/home.js" defer></script>
+    <script type="module" src="../js/card.js" defer></script>
+    <script type="module" src="../js/utilities.js" defer></script>
+
 </head>
 <body>
     <div class="root cart-root">
@@ -31,7 +35,7 @@
                         <img class="full-size" src="../images/others/header-mind.png" alt="">
                     </div>
                     <div class="logo-content">
-                        <h4 class="bold orange-color">Tasty Kitchens</h4>
+                        <h1 class="bold orange-color">Tasty Kitchens</h1>
                     </div>
                 </div>
                 <div class="nav-container semi-font">
@@ -59,8 +63,7 @@
                     <div><h4>Price</h4></div>
                 </header>
                 <div class="cart-body">
-
-                    <div class="meal flex space-between align-center">
+                    <article class="meal flex space-between align-center">
                         <div class="meal-cart-img">
                                 <img src="../images/home/cart/1.png" alt="">  
                         </div>
@@ -68,24 +71,23 @@
                             <div class="meal-title flex align-center space-between">
                                 <h4>Prawn Special</h4>    
                             </div>
-                            <div class="meal-qty pagination small flex align-center space-between"> 
-                                    <span class="block clicked left flex align-center justify-center">
-                                        +
-                                    </span>
-                                    <div class="title">
-                                        <h6>1</h6>
-                                    </div>
-                                    <span class="block clicked right flex align-center justify-center">
-                                        -
-                                    </span>
+                            <div class="counter flex align-center space-between">
+                                <button class="block directions left increase flex align-center justify-center">
+                                    +
+                                </button>
+                                <div class="title">
+                                    <span class="count">1</span>
+                                </div>
+                                <button class="block right decrease directions flex align-center justify-center">
+                                    -
+                                </button>
                             </div>
-                            <div class="meal-price flex align-center space-between">
+                            <div class="meal-price flex align-center space-between" data-price="550">
                                 ₹ 550.00
                             </div>   
                         </div>
-                    </div>
-
-                    <div class="meal flex space-between align-center">
+                    </article>
+                    <article class="meal flex space-between align-center">
                         <div class="meal-cart-img">
                                 <img src="../images/home/cart/2.png" alt="">  
                         </div>
@@ -93,23 +95,23 @@
                             <div class="meal-title flex align-center space-between">
                                 <h4>Full Meals</h4>    
                             </div>
-                            <div class="meal-qty pagination small flex align-center space-between"> 
-                                    <span class="block clicked left flex align-center justify-center">
-                                        +
-                                    </span>
-                                    <div class="title">
-                                        <h6>1</h6>
-                                    </div>
-                                    <span class="block clicked right flex align-center justify-center">
-                                        -
-                                    </span>
+                            <div class="counter flex align-center space-between">
+                                <button class="block directions left increase flex align-center justify-center">
+                                    +
+                                </button>
+                                <div class="title">
+                                    <span class="count">1</span>
+                                </div>
+                                <button class="block right decrease directions flex align-center justify-center">
+                                    -
+                                </button>
                             </div>
-                            <div class="meal-price flex align-center space-between">
+                            <div class="meal-price flex align-center space-between" data-price="550">
                                 ₹ 550.00
                             </div>   
                         </div>
                         
-                    </div>
+                    </article>
                 </div>
                 <hr/>
                 <footer class="cart-footer flex space-between relative">
@@ -117,7 +119,7 @@
                         <span>Order Total : </span>
                     </div>
                     <div>
-                        <span>₹800.00</span>
+                        <span class="total-price">₹800.00</span>
                     </div>
                     <div class="absolute btn-container">
                         <button class="btn">Place Order</button>
@@ -125,20 +127,16 @@
                 </footer>
             </div>
         </section>
-
-
             <!--   footer   -->
-
-
         <footer class="main-footer">
-            <section class="logo flex align-center justify-center">
+            <div class="logo flex align-center justify-center">
                 <div class="logo-img">
                     <img class="full-size" src="../images/footer/chef.png" alt="">
                 </div>
                 <div class="img-tiltle">
                     <h4>Tasty Kitchens</h4>
                 </div>
-            </section>
+            </div>
 
             <article class="article">
                 <p>
@@ -147,7 +145,7 @@
                 </p>
             </article>
 
-            <section class="social flex align-center space-between">
+            <div class="social flex align-center space-between">
                 <div>
                     <img class="full-size" src="../images/footer/insp.png" alt="">
                 </div>
@@ -160,7 +158,7 @@
                 <div>
                     <img class="full-size" src="../images/footer/facebook.png" alt="">
                 </div>
-            </section>
+            </div>
         </footer>
     </div>
 </body>

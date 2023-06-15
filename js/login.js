@@ -1,28 +1,16 @@
-const formLogin = document.getElementById('inputs'),
-    name = document.getElementById('name'),
-    password = document.getElementById('password'),
-    textError = document.getElementById('text-error');
+import {
+    selectElement
+} from './utilities.js'
 
-/*
-const validatePass = (values)=>{
-    let errors = '';
-    
-   const Uppervalue = values.split('').filter(v =>/[A-Z]/.test(v)=== true)
-   const Lowervalue = values.split('').filter(v => /[a-z]/.test(v))
-   const NumbValue  = values.split('').filter(v => /[0-9]/.test(v))
-   const Spicieal    = values.split('').filter(v => SpicialCar.split('').find(s => s === v))
-   if(NumbValue < 2) errors +=  '2 number, '
-   
-   if(Uppervalue.length < 2) errors += '2 upper, '
-   
-   if(Lowervalue.length < 2) errors += '2 lower ,'
-   
-   if(Spicieal.length < 2) errors += '2 character, '
-   
-    return errors
-}
-*/
+// selectors
 
+const formLogin = selectElement('#inputs'),
+    name = selectElement('#name'),
+    password = selectElement('#password'),
+    textError = selectElement('#text-error');
+
+
+/* validate password'characters length */
 
 const doesContainCharacterEnough = (values)=>{
     const specialCharacterList = '!@#$%%^&*()_+}{}{/*[]-=~?><.,';
@@ -76,6 +64,8 @@ const doesContainCharacterEnough = (values)=>{
     }
 }
 
+/* validate password strategy */
+
 function checkingOnPassword(){
     const {value} = password;
     const {status,errors} = doesContainCharacterEnough(value);
@@ -95,6 +85,8 @@ function checkingOnPassword(){
     return status
 }
 
+/* submit   */
+
 formLogin.addEventListener('submit', (e)=>{
     e.preventDefault();
     
@@ -105,4 +97,3 @@ formLogin.addEventListener('submit', (e)=>{
 
     return checkingOnPassword()
 })
-

@@ -31,17 +31,17 @@
 .root-minus-header-child.success  .root-child-heading{
     margin-bottom:16px;
 }
-.root-child-heading h3{
+.root-child-heading .title{
     font-size: 20px;
     font-weight: 500;
-    line-height:24px; 
+    line-height:32px; 
     color: #1E293B;
 }
-.root-child-heading.not-found h3{
+.root-minus-header-child.not-found .title{
     font-weight:700;
 }
-.root-minus-header-child.success .root-child-heading h3{
-    line-height:32px;
+.root-minus-header-child.success .root-child-heading .title{
+    line-height:24px;
 } 
 
 /* article */

@@ -1,7 +1,6 @@
 .cart .container{
     display: block;
     margin-top: 48px;
-    margin-bottom:64px;
     padding:5px 24px 0px;
     background: #F9FBFE;
 }
@@ -34,8 +33,9 @@
 /* item header */
 
 .cart h4{
+    font-size: 14px;
     font-weight: 500;
-    font-size: 14px 20px;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #475569;
@@ -92,9 +92,9 @@
 }
 
 .cart-footer:not(.btn-container){
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 24px;
     color: #3E4C59;
 }
 

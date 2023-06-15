@@ -47,6 +47,13 @@ button,.clicked{
     cursor: pointer;
 }
 
+button{
+    background: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
 h6{
     margin-block-start:0em;
     margin-block-end:0em;

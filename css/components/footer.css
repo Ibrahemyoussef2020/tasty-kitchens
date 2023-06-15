@@ -5,11 +5,16 @@
     background: #0F172A;
 }
 
-.main-footer .logo{
+
+.main-footer .logo {
     gap: 14px;
+}
+
+.main-footer .logo h2{
     font-size: 20px;
     font-weight: 700;
     font-style: italic;
+    line-height: 24px;
 }
 
 .main-footer .logo-img {
@@ -18,7 +23,7 @@
 }
 
 
-.main-footer section{
+.main-footer > *{
     text-align: center;
 }
 
@@ -47,5 +52,5 @@
 }
 
 .cart-root .main-footer{
-    margin-top: 0 !important;
+    margin-top:0px !important;
 }

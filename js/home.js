@@ -18,6 +18,3 @@ menuClose.addEventListener('click' , ()=> {
         menulist.classList.add('hide-list')
         console.log('vis');
 })
-
-
-

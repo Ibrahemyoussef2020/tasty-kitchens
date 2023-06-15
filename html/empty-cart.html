@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../css/pages/empty-success-404.css">
     <link rel="stylesheet" href="../css/media.css">
 
-    <script src="../js/home.js" defer></script>
+    <script type="module" src="../js/home.js" defer></script>
+    <script type="module" src="../js/utilities.js" defer></script>
 </head>
 <body>
     <header class="main-header relative">
@@ -28,7 +29,7 @@
                     <img src="../images/others/header-mind.png" alt="">
                 </div>
                 <div class="logo-content">
-                    <h4 class="bold orange-color">Tasty Kitchens</h4>
+                    <h1 class="bold orange-color">Tasty Kitchens</h1>
                 </div>
             </div>
             <div class="nav-container semi-font">
@@ -54,7 +55,7 @@
                 <img class="full-size" src="../images/others/empty-cart.png" alt="">
             </div>
             <div class="root-child-heading">
-                <h3>No Orders Yet!</h3>
+                <span class="title">No Orders Yet!</span>
             </div>
             <article>
                 <p>
@@ -62,9 +63,7 @@
                 </p>
             </article>
             <div class="button-container">
-                <button class="btn">
-                    <a href="../index.html">Go To Home Page</a>
-                </button>
+                <a href="../index.html" class="btn">Go To Home Page</a>
             </div>
         </div>
     </div>

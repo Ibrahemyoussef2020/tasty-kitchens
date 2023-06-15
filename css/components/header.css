@@ -10,7 +10,7 @@
 }
 
 .main-header .logo-container{
-    gap:20px;
+    gap:10px;
     min-height: 64px;
 }
 
@@ -19,7 +19,7 @@
     height: var(--logo-height);
 }
 
-.main-header .logo-content h4{
+.main-header .logo-content h1{
     font-size: 16px;
     font-weight: 700;
     font-style: italic;

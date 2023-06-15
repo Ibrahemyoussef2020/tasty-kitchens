@@ -1,0 +1,38 @@
+.counter {
+    display: flex;
+    max-width: fit-content;
+}
+
+.counter-count{
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    line-height: 0px;
+    font-weight: 500;
+    color: #475569;
+}
+
+.counter .title{
+    position: relative;
+    top:-3px;
+    text-align: center;
+    width: 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #475569;
+}
+
+.counter button{
+    font-family: 'Bree Serif', serif;
+    width: 17px;
+    height:17px;
+    font-size:12px;
+    font-weight:500;
+    margin-bottom: 5px;
+    border:1px solid #334155;
+    color: #475569;
+    border-radius: 2px;
+}
+
+
