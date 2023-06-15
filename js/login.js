@@ -7,7 +7,8 @@ import {
 const formLogin = selectElement('#inputs'),
     name = selectElement('#name'),
     password = selectElement('#password'),
-    textError = selectElement('#text-error');
+    textError = selectElement('#text-error'),
+    submitLink = selectElement('#submit-link');
 
 
 /* validate password'characters length */
@@ -81,6 +82,15 @@ function checkingOnPassword(){
     else{
         textError.textContent = errors;
     }
+
+    submitLink.classList.remove('none');
+
+    submitLink.click()
+    
+    setTimeout(()=>submitLink.classList.add('none'),500)
+
+    name.value = '';
+    password.value = '';
 
     return status
 }
