@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/cover.css">
+    <link rel="stylesheet" href="css/components/meals.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/counter.css">
+    <link rel="stylesheet" href="css/media.css">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/framework.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/cover.css">
-    <link rel="stylesheet" href="../css/components/meals.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
-    <link rel="stylesheet" href="../css/components/counter.css">
-    <link rel="stylesheet" href="../css/media.css">
-
-    <script type="module" src="../js/home.js" defer></script>
-    <script type="module" src="../js/add-food.js" defer></script>
-    <script type="module" src="../js/utilities.js" defer></script>
+    <script type="module" src="./js/home.js" defer></script>
+    <script type="module" src="./js/add-food.js" defer></script>
+    <script type="module" src="./js/utilities.js" defer></script>
 </head>
 <body>
 <div class="root">   
@@ -31,63 +32,66 @@
     <!-- header -->
 
     <header class="main-header relative">
-        <div class="container">
+        <div class="container space-between">
             <div class="logo-container flex align-center">
                 <div class="logo-img">
-                    <img class="full-size" src="../images/others/header-mind.png" alt="">
+                    <a href="./add-food.html">
+                        <img class="full-size" src="images/others/header-mind.png" alt="">
+                    </a>    
                 </div>
                 <div class="logo-content">
-                    <h1 class="bold orange-color">Tasty Kitchens</h1>
+                    <h1 class="bold orange-color"><a href="./add-food.html">Tasty Kitchens</a></h1>
                 </div>
             </div>
             <div class="nav-container semi-font">
                 <ul class="flex align-center">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="orange-color"><a href="../html/cart.html">Cart</a></li>
-                    <li><button class="btn"><a href="../html/login.html">Logout</a></button></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="orange-color"><a href="./cart.html">Cart</a></li>
+                    <li><button class="btn"><a href="./login.html">Logout</a></button></li>
                 </ul>
-                <div class="d-lg-none x clicked">x</div>
+                <span class="d-lg-none x clicked">x</span>
             </div>
-        </div>
 
-        <div class="menu-btn d-lg-none absolute clicked">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="menu-btn d-lg-none clicked">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
     <!--- black cover-->
 
-    <section class="cover black-cover flex">
-        <div class="img-container">
-            <img class="full-size d-lg-none" src="../images/black-cover/black-cover-mob-dish.png" alt="">
-            <img class="full-size d-sm-none" src="../images/black-cover/black-cover-pc-dish.png" alt="">
-        </div>
-        <div class="content">
-            <h2>Mc Donald’s</h2>
+    <section class="cover black-cover">
+        <div class="restaurant-cover flex">
+            <div class="img-container">
+                <img class="full-size d-lg-none" src="./images/black-cover/black-cover-mob-dish.png" alt="">
+                <img class="full-size d-sm-none" src="./images/black-cover/black-cover-pc-dish.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Mc Donald’s</h2>
+                <article>
+                    <span class="flex">Mc Donald’s</span>
+                    <span class="flex">TGF Variety Mall, Kurnool.</span>
+                </article>
 
-            <article>
-                <span class="flex">Mc Donald’s</span>
-                <span class="flex">TGF Variety Mall, Kurnool.</span>
-            </article>
+                <div class="rating flex align-center relative">
+                    <div class="rating-left increase">
+                        <div class="start">
+                            <img src="./images/black-cover/star-mob.png" alt="">
+                        </div>
+                        <div class="rating-in-numbers">
+                            <p>200 + Rating</p>
+                        </div>
+                    </div>    
 
-            <div class="rating flex align-center relative">
-                <div class="rating-left increase">
-                    <div class="start">
-                        <img src="../images/black-cover/star-mob.png" alt="">
-                    </div>
-                    <div class="rating-in-numbers">
-                        <p>200 + Rating</p>
-                    </div>
-                </div>    
-
-                <div class="rating-right decrease">
-                    <div class="start">
-                        <small>₹ 350</small>
-                    </div>
-                    <div class="rating-in-numbers">
-                        <p>Cost for two</p>
+                    <div class="rating-right decrease">
+                        <div class="start">
+                            <small>₹ 350</small>
+                        </div>
+                        <div class="rating-in-numbers">
+                            <p>Cost for two</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,17 +100,17 @@
 
     <!---------  meals ----------->
 
-    <section class="meals">
+    <section class="meals add-sub-meals">
         <div class="container">
             <article class="meal large">
                     <div class="meal-img">
-                        <img src="../images/home/buy-meals/1.png" alt="">
+                        <img src="./images/home/buy-meals/1.png" alt="">
                     </div>
                     <div class="meal-content">
                         <h4>Chicken Roast</h4>
                         <p>₹ 350.00</p>
                         <div class="meals-rating">
-                            <span><img src="../images/others/yellow-star.png" alt=""></span>
+                            <span><img src="./images/others/yellow-star.png" alt=""></span>
                             <span class="meals-rating-num bold">4.5</span>
                         </div>
                         <div class="add-meal">
@@ -128,13 +132,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/2.png" alt="">
+                    <img src="./images/home/buy-meals/2.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -156,13 +160,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/3.png" alt="">
+                    <img src="./images/home/buy-meals/3.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -184,13 +188,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/4.png" alt="">
+                    <img src="./images/home/buy-meals/4.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -212,13 +216,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/5.png" alt="">
+                    <img src="./images/home/buy-meals/5.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -240,13 +244,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/6.png" alt="">
+                    <img src="./images/home/buy-meals/6.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -268,13 +272,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/7.png" alt="">
+                    <img src="./images/home/buy-meals/7.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -296,13 +300,13 @@
 
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/8.png" alt="">
+                    <img src="./images/home/buy-meals/8.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -323,13 +327,13 @@
             </article>
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/9.png" alt="">
+                    <img src="./images/home/buy-meals/9.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -350,13 +354,13 @@
             </article>
             <article class="meal large">
                 <div class="meal-img">
-                    <img src="../images/home/buy-meals/10.png" alt="">
+                    <img src="./images/home/buy-meals/10.png" alt="">
                 </div>
                 <div class="meal-content">
                     <h4>Chicken Roast</h4>
                     <p>₹ 350.00</p>
                     <div class="meals-rating">
-                        <span><img src="../images/others/yellow-star.png" alt=""></span>
+                        <span><img src="./images/others/yellow-star.png" alt=""></span>
                         <span class="meals-rating-num bold">4.5</span>
                     </div>
                     <div class="add-meal">
@@ -377,13 +381,13 @@
         </article>
         <article class="meal large">
             <div class="meal-img">
-                <img src="../images/home/buy-meals/11.png" alt="">
+                <img src="./images/home/buy-meals/11.png" alt="">
             </div>
             <div class="meal-content">
                 <h4>Chicken Roast</h4>
                 <p>₹ 350.00</p>
                 <div class="meals-rating">
-                    <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    <span><img src="./images/others/yellow-star.png" alt=""></span>
                     <span class="meals-rating-num bold">4.5</span>
                 </div>
                 <div class="add-meal">
@@ -404,13 +408,13 @@
         </article>
         <article class="meal large">
             <div class="meal-img">
-                <img src="../images/home/buy-meals/12.png" alt="">
+                <img src="./images/home/buy-meals/12.png" alt="">
             </div>
             <div class="meal-content">
                 <h4>Chicken Roast</h4>
                 <p>₹ 350.00</p>
                 <div class="meals-rating">
-                    <span><img src="../images/others/yellow-star.png" alt=""></span>
+                    <span><img src="./images/others/yellow-star.png" alt=""></span>
                     <span class="meals-rating-num bold">4.5</span>
                 </div>
                 <div class="add-meal">
@@ -438,7 +442,7 @@
     <footer class="main-footer">
         <div class="logo flex align-center justify-center">
             <div class="logo-img">
-                <img class="full-size" src="../images/footer/chef.png" alt="">
+                <img class="full-size" src="./images/footer/chef.png" alt="">
             </div>
             <div class="img-tiltle">
                 <h2>Tasty Kitchens</h2>
@@ -454,16 +458,16 @@
 
         <div class="social flex align-center space-between">
             <div>
-                <img class="full-size" src="../images/footer/insp.png" alt="">
+                <img class="full-size" src="./images/footer/insp.png" alt="">
             </div>
             <div>
-                <img class="full-size" src="../images/footer/instagram.png" alt="">
+                <img class="full-size" src="./images/footer/instagram.png" alt="">
             </div>
             <div>
-                <img class="full-size" src="../images/footer/twaitter.png" alt="">
+                <img class="full-size" src="./images/footer/twaitter.png" alt="">
             </div>
             <div>
-                <img class="full-size" src="../images/footer/facebook.png" alt="">
+                <img class="full-size" src="./images/footer/facebook.png" alt="">
             </div>
         </div>
     </footer>

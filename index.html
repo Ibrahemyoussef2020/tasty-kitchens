@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/cover.css">
+    <link rel="stylesheet" href="css/components/slider.css">
     <link rel="stylesheet" href="css/components/meals.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/components/pagination.css">
@@ -31,94 +31,64 @@
     <!-- header -->
 
     <header class="main-header relative">
-        <div class="container">
+        <div class="container space-between">
             <div class="logo-container flex align-center">
                 <div class="logo-img">
-                    <img class="full-size" src="images/others/header-mind.png" alt="">
+                    <a href="./add-food.html">
+                        <img class="full-size" src="images/others/header-mind.png" alt="">
+                    </a>    
                 </div>
                 <div class="logo-content">
-                    <h1 class="bold orange-color"><a href="./html/add-food.html">Tasty Kitchens</a></h1>
+                    <h1 class="bold orange-color"><a href="./add-food.html">Tasty Kitchens</a></h1>
                 </div>
             </div>
             <div class="nav-container semi-font">
                 <ul class="flex align-center">
                     <li><a href="#">Home</a></li>
-                    <li class="orange-color"><a href="html/cart.html">Cart</a></li>
-                    <li><button class="btn"><a href="html/login.html">Logout</a></button></li>
+                    <li class="orange-color"><a href="./cart.html">Cart</a></li>
+                    <li><button class="btn"><a href="./login.html">Logout</a></button></li>
                 </ul>
                 <span class="d-lg-none x clicked">x</span>
             </div>
-        </div>
 
-        <div class="menu-btn d-lg-none absolute clicked">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="menu-btn d-lg-none clicked">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
 
     <!-- cover -->
-
-    <section class="orange-cover cover flex relative">
-        <div class="img-container ">
-            <img src="images/cover/spicy-dish.png" alt="">
-        </div>
-
-        <div class="yellow-border flex absolute">
-            <img src="images/cover/vector-1.png" alt="">
-            <img src="images/cover/vector-2.png" alt="">
-        </div>
-
-        <div class="content">
-            <h2>
-                South Indian Food
-            </h2>
-            <p>
-                Best offers on South India holiday tour packages at Veena World.
-            </p>
-            <div class="contact flex align-center">
-                <span class="whats">
-                    <img class="full-size d-sm-none" src="images/cover/whats-pc.png" alt="">
-                    <img class="full-size d-lg-none" src="images/cover/whats-mob.png" alt="">
-                </span>
-                <span>
-                    +123 456 789
-                </span>
-            </div>
-
-            <div class="offer-container absolute">
-                <img class="d-lg-none" src="images/cover/offer-mob.png" alt="">
-                
-                <div class="fifty flex  d-sm-none  align-center justify-center relative">
-                    <img src="images/cover/50.png" alt="">
+        <section class="slider">
+            <div class="container slider-container relative">
+                <div class="slider-img d-none-from-med">
+                    <img class="full-size" src="./images/slider/slider-small.png" alt="">
                 </div>
-
-                <div class="water-mark">
-                    <div class="d-lg-none b"><img  src="images/cover/water-mark-mob.png" alt=""></div>
-                    <div class="d-sm-none b"><img  src="images/cover/water-mark-pc.png" alt=""></div>
+                <div class="slider-img d-none-until-med">
+                    <img class="full-size" src="./images/slider/slider.png" alt="">
+                </div>
+                <div class="slider-content">
+                    <h2>South Indian Food</h2>
+                    <p>
+                        Best offers on South India holiday tour packages at Veena World.
+                    </p>
+                    <div class="slider-concat">
+                        <div>
+                            <img src="./images/slider/whats-pc.png" alt="">
+                        </div>
+                        <span>012651945</span>
+                    </div>
+                </div>
+                <div class="points absolute">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-
-            <div class="points absolute">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-        </div>
-
-        <div class="water-mark">
-            <div class="d-lg-none b"><img  src="images/cover/water-mark-mob.png" alt=""></div>
-            <div class="d-sm-none b"><img  src="images/cover/water-mark-pc.png" alt=""></div>
-        </div>
-
-        <div class="brown-img absolute">
-            <img class="full-size" src="images/cover/vector-3.png" alt="">
-        </div>
-    </section>
-
+        </section>
     <!---------  meals ----------->
 
     <!--meals filter-->
@@ -140,7 +110,7 @@
                     <span class="sort-title-heading">Sort by Highest</span>
                 </div>
                 <div class="sort-drop relative">
-                    <div name="choose-sort-item" id="choose-sort-item" class="choose-sort-item flex">
+                    <div name="choose-sort-item" id="choose-sort-item" class="choose-sort-item none">
                         <div class="lowest  option flex align-center"  id="Lowest">lowest</div>
                         <div class="highest option  flex align-center" id="Highest">highest</div>
                     </div>
@@ -156,10 +126,13 @@
                         <img src="images/home/home-body/home-1.png" alt="">
                     </div>
                     <div class="meal-content">
-                        <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                        <h4><a href="./add-food.html">McDonald’s</a></h4>
                         <p>Fast Food</p>
                         <div class="meals-rating">
-                            <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                            <span>
+                                <img src="images/others/yellow-star.png" alt="">
+                            </span>
+                            <span class="meals-rating-num bold">4.4</span>
                             <span>
                             (222 ratings)
                             </span>
@@ -172,10 +145,13 @@
                     <img src="images/home/home-body/home-2.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">SVS Paradise</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -188,10 +164,13 @@
                     <img src="images/home/home-body/home-3.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Pizza Hut Snack</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -204,10 +183,13 @@
                     <img src="images/home/home-body/home-4.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Veg King</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -220,10 +202,13 @@
                     <img src="images/home/home-body/home-5.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Pizza Hut</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -236,10 +221,13 @@
                     <img src="images/home/home-body/home-6.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Freezing Hub</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -252,10 +240,13 @@
                     <img src="images/home/home-body/home-7.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Subway</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -268,10 +259,13 @@
                     <img src="images/home/home-body/home-8.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Veg Carbs</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>
@@ -283,10 +277,13 @@
                     <img src="images/home/home-body/home-9.png" alt="">
                 </div>
                 <div class="meal-content">
-                    <h4><a href="./html/add-food.html">McDonald’s</a></h4>
+                    <h4><a href="./add-food.html">Spaghetti</a></h4>
                     <p>Fast Food</p>
                     <div class="meals-rating">
-                        <span><img src="images/others/yellow-star-4.4.png" alt=""></span>
+                        <span>
+                            <img src="images/others/yellow-star.png" alt="">
+                        </span>
+                        <span class="meals-rating-num bold">4.4</span>
                         <span>
                         (222 ratings)
                         </span>

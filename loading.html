@@ -12,38 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/framework.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/pages/loading.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/pages/loading.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
     <header class="main-header relative">
-        <div class="container">
+        <div class="container space-between">
             <div class="logo-container flex align-center">
                 <div class="logo-img">
-                    <img class="full-size" src="../images/others/header-mind.png" alt="">
+                    <a href="./add-food.html">
+                        <img class="full-size" src="images/others/header-mind.png" alt="">
+                    </a>    
                 </div>
                 <div class="logo-content">
-                    <h1 class="bold orange-color">Tasty Kitchens</h1>
+                    <h1 class="bold orange-color"><a href="./add-food.html">Tasty Kitchens</a></h1>
                 </div>
             </div>
             <div class="nav-container semi-font">
                 <ul class="flex align-center">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="orange-color"><a href="../html/cart.html">Cart</a></li>
-                    <li><button class="btn"><a href="../html/login.html">Logout</a></button></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="orange-color"><a href="./cart.html">Cart</a></li>
+                    <li><button class="btn"><a href="./login.html">Logout</a></button></li>
                 </ul>
-                <div class="d-lg-none x clicked">x</div>
+                <span class="d-lg-none x clicked">x</span>
             </div>
-        </div>
 
-        <div class="menu-btn d-lg-none absolute clicked">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="menu-btn d-lg-none clicked">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     

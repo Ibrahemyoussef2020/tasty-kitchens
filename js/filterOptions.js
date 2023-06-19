@@ -5,7 +5,7 @@ import{
 
 // selectors
 
-const selectDrop = selectElement('.sort-drop'), 
+const selectDrop = selectElement('.sort'), 
     sortItems = selectElement('.choose-sort-item'),
     sortHeading = selectElement('.sort-title-heading'), 
     lowest = selectElement('.lowest'),

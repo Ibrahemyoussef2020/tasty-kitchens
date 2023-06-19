@@ -12,46 +12,48 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/framework.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/counter.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
-    <link rel="stylesheet" href="../css/components/counter.css">
-    <link rel="stylesheet" href="../css/pages/cart.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/counter.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/counter.css">
+    <link rel="stylesheet" href="css/pages/cart.css">
+    <link rel="stylesheet" href="css/media.css">
 
-    <script type="module" src="../js/home.js" defer></script>
-    <script type="module" src="../js/card.js" defer></script>
-    <script type="module" src="../js/utilities.js" defer></script>
+    <script type="module" src="./js/home.js" defer></script>
+    <script type="module" src="./js/cart.js" defer></script>
+    <script type="module" src="./js/utilities.js" defer></script>
 
 </head>
 <body>
     <div class="root cart-root">
         <header class="main-header relative">
-            <div class="container">
+            <div class="container space-between">
                 <div class="logo-container flex align-center">
                     <div class="logo-img">
-                        <img class="full-size" src="../images/others/header-mind.png" alt="">
+                        <a href="./add-food.html">
+                            <img class="full-size" src="images/others/header-mind.png" alt="">
+                        </a>    
                     </div>
                     <div class="logo-content">
-                        <h1 class="bold orange-color">Tasty Kitchens</h1>
+                        <h1 class="bold orange-color"><a href="./add-food.html">Tasty Kitchens</a></h1>
                     </div>
                 </div>
                 <div class="nav-container semi-font">
                     <ul class="flex align-center">
-                        <li><a href="../index.html">Home</a></li>
-                        <li class="orange-color"><a href="../html/cart.html">Cart</a></li>
-                        <li><button class="btn"><a href="../html/login.html">Logout</a></button></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="orange-color"><a href="./cart.html">Cart</a></li>
+                        <li><button class="btn"><a href="./login.html">Logout</a></button></li>
                     </ul>
-                    <div class="d-lg-none x clicked">x</div>
+                    <span class="d-lg-none x clicked">x</span>
                 </div>
-            </div>
     
-            <div class="menu-btn d-lg-none absolute clicked">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="menu-btn d-lg-none clicked">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
             <!-- items -->
@@ -65,7 +67,7 @@
                 <div class="cart-body">
                     <article class="meal flex space-between align-center">
                         <div class="meal-cart-img">
-                                <img src="../images/home/cart/1.png" alt="">  
+                                <img src="./images/home/cart/1.png" alt="">  
                         </div>
                         <div class="meal-cart-content  flex space-between">
                             <div class="meal-title flex align-center space-between">
@@ -89,7 +91,7 @@
                     </article>
                     <article class="meal flex space-between align-center">
                         <div class="meal-cart-img">
-                                <img src="../images/home/cart/2.png" alt="">  
+                                <img src="./images/home/cart/2.png" alt="">  
                         </div>
                         <div class="meal-cart-content flex space-between">
                             <div class="meal-title flex align-center space-between">
@@ -113,16 +115,20 @@
                         
                     </article>
                 </div>
-                <hr/>
-                <footer class="cart-footer flex space-between relative">
-                    <div>
-                        <span>Order Total : </span>
+                <div class="hr-container flex">
+                    <hr/>
+                </div>
+                <footer class="cart-footer">
+                    <div class="bill flex space-between">
+                        <div>
+                            <span>Order Total : </span>
+                        </div>
+                        <div>
+                            <span class="total-price">₹800.00</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="total-price">₹800.00</span>
-                    </div>
-                    <div class="absolute btn-container">
-                        <button class="btn">Place Order</button>
+                    <div class="btn-container">
+                        <a class="btn" href="./payment-Successful.html">Place Order</a>
                     </div>
                 </footer>
             </div>
@@ -131,7 +137,7 @@
         <footer class="main-footer">
             <div class="logo flex align-center justify-center">
                 <div class="logo-img">
-                    <img class="full-size" src="../images/footer/chef.png" alt="">
+                    <img class="full-size" src="./images/footer/chef.png" alt="">
                 </div>
                 <div class="img-tiltle">
                     <h4>Tasty Kitchens</h4>
@@ -147,16 +153,16 @@
 
             <div class="social flex align-center space-between">
                 <div>
-                    <img class="full-size" src="../images/footer/insp.png" alt="">
+                    <img class="full-size" src="./images/footer/insp.png" alt="">
                 </div>
                 <div>
-                    <img class="full-size" src="../images/footer/instagram.png" alt="">
+                    <img class="full-size" src="./images/footer/instagram.png" alt="">
                 </div>
                 <div>
-                    <img class="full-size" src="../images/footer/twaitter.png" alt="">
+                    <img class="full-size" src="./images/footer/twaitter.png" alt="">
                 </div>
                 <div>
-                    <img class="full-size" src="../images/footer/facebook.png" alt="">
+                    <img class="full-size" src="./images/footer/facebook.png" alt="">
                 </div>
             </div>
         </footer>

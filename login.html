@@ -11,47 +11,57 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/framework.css">
-    <link rel="stylesheet" href="../css/pages/login.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/pages/login.css">
+    <link rel="stylesheet" href="css/media.css">
 
-    <script type="module" src="../js/login.js" defer></script>
-    <script type="module" src="../js/utilities.js" defer></script>
+    <script type="module" src="./js/login.js" defer></script>
+    <script type="module" src="./js/utilities.js" defer></script>
 </head>
 <body>
     <div class="login">
         <section class="login-form">
             <div class="form-img">
-                <img class="full-size" src="../images/login/login-mob.png" alt="">
+                <img class="full-size" src="./images/login/login-mob.png" alt="">
             </div>
             <div class="logo">
                 <div>
-                    <img src="../images/others/header-mind.png" alt="">
+                    <img src="./images/others/header-mind.png" alt="">
                 </div>
                 <div>
                     <h5>Tasty Kitchens</h5>
                 </div>
             </div>
+            
             <form id="inputs" class="inputs">
+                <div class="login-container absolute">
+                    <h1>Login</h1>
+                </div>
+                
                 <div class="input-container">
-                    <label class="relative" for="name" id="name-label">USERNAME</label>
+                    <label class="relative" for="name" for="name">USERNAME</label>
                     <input type="text" name="name" id="name">
                 </div>
+
                 <div class="input-container">
-                    <label for="password" id="password-label">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                    <p class="text-error" id="text-error"></p>
+                    <div class="password">
+                        <label for="password" for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="errors">
+                        <p class="text-error" id="text-error"></p>
+                    </div>
                 </div>
+
                 <div class="button-container relative">
                     <button type="submit">Login</button>
-                    <a href="./payment-Successful.html" class="absolute none" id="submit-link"></a>
                 </div>
             </form>
         </section>
 
         <section class="login-img">
-            <img class="full-size" src="../images/login/login-pc.png" alt="">
+            <img class="full-size" src="./images/login/login-pc.png" alt="">
         </section>
     </div>
 </body>

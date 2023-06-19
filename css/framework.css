@@ -7,7 +7,6 @@
     /* gaps */
     --sixty-gap:16px; /* both media */
     --twelve-gap:12px; /* both media */
-    --margin-x-container:24px; /* 24 left bottom mob - 165 x  32 bottom pc*/
     --margin-gap:24px; /* pc 32 */
     --logo-width:39px /* 53 pc */;
     --logo-height:32px /* 43 pc */;
@@ -68,7 +67,7 @@ a{
 /**********  general  components   ***********/
 
 .container{
- width: calc(100% - calc(var(--margin-x-container) * 2));
+ width:90%;
  margin: 0 auto;
  display: flex;
  flex-direction: column;
@@ -133,6 +132,10 @@ a{
 
 .d-sm-none{
     display: none 
+}
+
+.d-none-until-med{
+    display: none;
 }
 
 

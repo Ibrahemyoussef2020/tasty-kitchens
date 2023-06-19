@@ -23,6 +23,27 @@ const doesContainCharacterEnough = (values)=>{
     const containsNumbers = values.split('').filter(v => /[0-9]/.test(v))
     const containsSpecialCharacter   = values.split('').filter(v => specialCharacterList.split('').find(s => s === v))
 
+    if (password.value === '') {
+        
+        errors = 'password is required' 
+        
+        return {
+            status:false,
+            errors
+        }
+    }
+
+    if (password.value.length < 8) {
+        
+        errors = 'password\'character must be 8 at lest'
+        
+        return {
+            status:false,
+            errors
+        }
+    }
+    
+    
     if(containsUpperCase.length < 2) {
         errors = 'password must contains 2 upper cases at lest'
         
@@ -58,6 +79,7 @@ const doesContainCharacterEnough = (values)=>{
             errors
         }
     }
+
     
     return {
         status:true,
@@ -70,28 +92,18 @@ const doesContainCharacterEnough = (values)=>{
 function checkingOnPassword(){
     const {value} = password;
     const {status,errors} = doesContainCharacterEnough(value);
-
-    if (value === '') {
-        textError.innerText = 'password is required' 
-        return false
-    }
-    else if (value.length < 8) {
-        textError.innerText = 'password\'character must be 8 at lest'
-        return false
-    }
-    else{
-        textError.textContent = errors;
-    }
-
-    submitLink.classList.remove('none');
-
-    submitLink.click()
     
-    setTimeout(()=>submitLink.classList.add('none'),500)
+    textError.textContent = errors;
+
+    if (!status) {
+        return false
+    }
 
     name.value = '';
     password.value = '';
 
+    window.location='../index.html';
+    
     return status
 }
 

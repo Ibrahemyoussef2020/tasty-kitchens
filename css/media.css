@@ -6,6 +6,15 @@
         --margin-gap:20px;
     }
 
+    /* classes */
+
+    .d-none-until-med{
+        display:block;
+    }
+
+    .d-none-from-med{
+        display: none;
+    }
 
     /******************* pagination component ************/
     .pagination{
@@ -67,6 +76,11 @@
 
     /******* header component ************/
 
+
+    .main-header .nav-container{
+        padding:2px;
+    }
+
     .main-header .logo-container {
         gap:18px;
     }
@@ -80,14 +94,18 @@
         font-weight: 700;
     }
 
-    /********* orange cover component ************/
+    /********* slider component ************/
 
-    .orange-cover p {
-        line-height: 24px;
+    .slider-container{
+        width: 90%;
+    }
+    .slider-content{
+        left:55%;
     }
     
-    .orange-cover .content span {
-        line-height:24;
+    .slider-concat{
+        font-size: 12px;
+        letter-spacing:1px;
     }
 
     /********* black cover component  ***********/
@@ -148,84 +166,74 @@
     :root{
         --margin-x-container:100px;
         --margin-gap:32px;
-        --sixteen-mob:24px;
+        --sixteen-mob:27px;
         --eight-mob:16px;
         --forty-two-mob:32px
     }
 
     /* classes */
-    .d-sm-none {
-        display: inline;
-    }
-    .d-sm-none.flex {
-        display: flex;
-    }
-    .d-sm-none.b{
-        display: block;
-    }
-    .d-lg-none{
-        display: none !important;
-    }
+
+        /* classes */
+
+        .d-sm-none {
+            display: block;
+        }
+        .d-sm-none.flex {
+            display: flex;
+        }
+        .d-sm-none{
+            display: block;
+        }
+        .d-lg-none{
+            display: none !important;
+        }
+
+        /* components */
 
     .container{
         flex-direction: row;
         justify-content: space-between;
+        width:75%;
+    }
+
+    .meals.add-sub-meals .container{
+        width: 95%;
     }
 
     .main-header .nav-container {
+        width:fit-content;
+        margin: 0;
         background:inherit;
         position: initial;
         transform:scale3d(1,1,1);
     }
+    /***************** footer component ***************/
 
-    /***********  orange cover component   ***********/
-
-    .cover{
-        min-height: 305px;
+    .main-footer{
+        margin-top: 64px;
     }
 
-    .orange-cover {
-        width: calc(100% - calc(var(--margin-x-container) * 2));
-        margin:auto;
+    .btn-container{
+        margin-top:48px;
     }
 
-    .orange-cover .img-container{
-        height: 305px;
-    }
-    .orange-cover .img-container img{
-        height: 100%;
+    /***********  slider component   ***********/
+
+    .slider-img {
+        height:313px;
     }
 
-    .orange-cover .yellow-border img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 305px;
-    }
-
-    .brown-img{
-        max-width:122px;
-        height: 305px;
-    }
-
-    .brown-img img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .orange-cover .content{
-        left: 340px;
-        top: 85px;
-        text-align: start;
-    }
-
-    .orange-cover .content h2{
-        font-size: 36px;
+    .slider h2{
         line-height: 48px;   
         margin-bottom:8px;
     }
 
-    .orange-cover .content p{
+    .slider-content{
+        bottom:80px;
+        left:52%;
+    }
+
+    .slider p{
         max-width:250px;
         font-size: 16px;
         font-weight: 500;
@@ -233,28 +241,21 @@
         margin: 0  0 8px 0;  
     }
 
-    .orange-cover .contact{
+    .slider span {
+        font-size: 12px;
+        line-height:24px;
+    }
+
+    .slider .contact{
         justify-content: flex-start;
     }
 
-    .orange-cover  .whats{
+    .slider  .whats{
         display: inline-block;
         min-width:25px;
         min-height: 25px;
     }
 
-    .offer-container .water-mark {
-        position: absolute;
-        bottom: 24px;
-        left: 70px;
-    }
-
-    .offer-container{
-        height: 70px;
-        width: 75px;
-        left: -124px;
-        bottom: 70px;
-    }
     .points{
         gap: 12px;
     }
@@ -270,15 +271,10 @@
         background: rgba(255, 255, 255, 0.8);
     }
 
-    .orange-cover > .water-mark {
-        top: 25px;
-        right: 95px;
-    }
-
     /********* black cover component ************/
 
     .black-cover {
-        background-position: -63px 0px;
+        background-position:28px 0px;
         margin-bottom:32px;
     }
 
@@ -318,11 +314,6 @@
         line-height:24px;
     }
 
-    .meals .container{
-        width:95%;
-        margin: auto;
-    }
-
     .meal.large .meal-img {
         width: 255px;
         height: 150px;
@@ -337,41 +328,56 @@
         margin-bottom:9px;
     }
 
-    /***********  counter component   ***********/
-
-    .cart .counter{
-        min-width: 200px;
-        padding-left:25px;
-        justify-content: flex-start;
-    }
+    
     
     /******************************************/
     /*             cart page                  */
     /******************************************/
 
-    .cart h4{
-        font-size:20px;
-    }
-
     .cart .container{
-        padding: 32px 24px 0px;
-        box-shadow: 2px 1px 0 0 rgba(56,60,86,.44),
-                    -1px -1px 0px 0 rgba(56,60,86,.44)
+        padding: 32px 0px 48px;
+        border: 0.5px solid rgba(56,60,86,.44);    
     }
 
+    .cart-header,
+    .cart-body,
+    .cart-footer{
+        padding-left:48px;
+        padding-right:48px;
+    }
     .cart-header{
         display: flex;
+        padding-left:120px;
     }
     .meal-cart-content{
         flex-direction:row;
     }
 
+    .cart h4{
+        font-size:20px;
+    }
+
+
     .cart .meal-cart-content  > *:last-child {
         justify-content: flex-end;
     }
 
+    .cart .counter{
+        min-width: 200px;
+        padding-left:40px;
+        justify-content: flex-start;
+    }
+
     .meal-qty{
         padding-right:130px;
+    }
+
+    .hr-container{
+        justify-content: flex-end;
+    }
+
+    .hr-container hr{
+        width:calc(100% - 48px);
     }
 
     .cart-footer:not(.btn-container){
@@ -390,7 +396,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        column-gap: 114px;
+        column-gap:0px;
         perspective-origin:top left;
         margin: 0;
     }
@@ -400,7 +406,7 @@
     }
 
     .login-form{
-        position: initial;
+        position:relative;
         max-width:calc(100% - 156px);
         max-width:456px;
         height:calc(561px + 48px);
@@ -409,7 +415,6 @@
         background: #FEFEFF;
         box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
     }
-
 
     .form-img {
         display: none;
@@ -423,15 +428,15 @@
         background: inherit;
     }
 
-    .inputs label.relative::before {
-        content: 'Login';
-        position: absolute;
-        top:-88px;
-        left: 0;
-        right: 0;
-        font-size:32px;
+    .login-container {
+        top: 135px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .login-container h1{
+        font-size: 32px;
         font-weight: 500;
-        font-style: italic;
         line-height:40px;
         text-align: center;
         color: #0F172A;
@@ -516,61 +521,50 @@
 
 @media only screen and (min-width:1340px){
     :root{
-        --margin-x-container:165px;
+        --sixteen-mob:36px
+    }
+
+
+    /********************* header ******************/
+
+    .main-header .nav-container {
+        padding: 0;
     }
 
     /***************** orange cover component ************/
 
-    .orange-cover .img-container {
-        width: 550px;
-    }
-
-    .orange-cover .img-container img{
-        width: 100%;
-    }
-
-    .orange-cover .yellow-border {
-        left: 127px;
-        width: 152px;
-        transform: rotateZ(7deg);
-    }
-
-    .orange-cover .content {
-        left: 520px;
-    }
-
-    .offer-container {
-        bottom: 73px;
-        left: -148px;
-    }
-
-    .orange-cover .brown-img{
-        width: 122px;
-    }
-
-    .orange-cover > .water-mark {
-        top:40px;
-        right: 141px;
+    .slider h2{
+        font-size: 36px;
     }
 
 
     /********************* meals component ************/
     
     .meals .container {
-        width: calc(100% - calc(var(--margin-x-container) * 2));
         justify-content: space-around;
     }
+
+    .meals.add-sub-meals .container{
+        width:75%;
+    }
+
 
     .meal.meal.large {
         gap:30px;
     }
-     
+    
     .meals .container .meal-content{
         width: 175px;
     }
 
     .meal.large .meal-content .meals-rating {
         margin-bottom:12px;
+    }
+
+    /*********** login page    **************/
+
+    .login{
+        column-gap: 114px;
     }
     
 }

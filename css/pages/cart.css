@@ -1,7 +1,7 @@
 .cart .container{
     display: block;
     margin-top: 48px;
-    padding:5px 24px 0px;
+    padding:5px 0 0px;
     background: #F9FBFE;
 }
 
@@ -80,15 +80,19 @@
 
 /* item footer */
 
-.cart hr {
+.hr-container{
+    justify-content: center;
+}
+
+.hr-container hr {
     height:0px;
-    width: 100%;
-    margin:24px auto;
+    width:100%;
+    margin:24px 0;
     border-top:2px dashed #CBD2D9;
 }
 
 .cart-footer{
-    min-height: 152px;
+    min-height:104px;
 }
 
 .cart-footer:not(.btn-container){
@@ -99,8 +103,8 @@
 }
 
 .btn-container{
-    right: 0;
-    top:48px;
+    margin-top:24px;
+    text-align: end;
 }
 
 
