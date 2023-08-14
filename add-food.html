@@ -64,10 +64,10 @@
 
     <section class="cover black-cover">
         <div class="restaurant-cover flex">
-            <div class="img-container">
-                <img class="full-size d-lg-none" src="./images/black-cover/black-cover-mob-dish.png" alt="">
-                <img class="full-size d-sm-none" src="./images/black-cover/black-cover-pc-dish.png" alt="">
-            </div>
+            <picture class="img-container" media="(min-width:1024px)" >
+                <source srcset="./images/black-cover/black-cover-pc-dish.png">
+                <img class="full-size" src="./images/black-cover/black-cover-mob-dish.png" alt="Tasty">
+            </picture>
             <div class="content">
                 <h2>Mc Donald’s</h2>
                 <article>
