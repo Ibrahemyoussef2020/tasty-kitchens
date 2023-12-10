@@ -102,7 +102,7 @@ function checkingOnPassword(){
     name.value = '';
     password.value = '';
 
-    window.location='/';
+    window.location='https://ibrahemyoussef2020.github.io/tasty-kitchens/';
     
     return status
 }
