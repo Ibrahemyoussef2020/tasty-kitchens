@@ -102,7 +102,7 @@ function checkingOnPassword(){
     name.value = '';
     password.value = '';
 
-    window.location='../index.html';
+    window.location='/';
     
     return status
 }
